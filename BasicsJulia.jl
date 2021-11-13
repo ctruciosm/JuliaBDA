@@ -31,8 +31,7 @@ x // y              # Divisão Inteira
 x % y               # Resto da Divisão
 x^y                 # Potência
 
-
-|# 3. Tipos de objetos
+# 3. Tipos de objetos
 typeof(x)             
 typeof(nomes)
 typeof(idades)
