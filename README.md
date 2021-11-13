@@ -13,4 +13,9 @@ Brief introduction to basic data analysis with [Julia](https://julialang.org).
 
 If you are not familiar with basic statistics, there are plenty of books and materials out there (including the material of my [basic statistical course for business administration students](https://ctruciosm.github.io/MAD211.html)).
 
+## Some nice books about Julia:
+
+- Storopoli, Huijzer and Alonso (2021). Julia Data Science. https://juliadatascience.io. ISBN: 9798489859165.
+
+
 
