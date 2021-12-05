@@ -13,13 +13,13 @@ using Pkg                   # Pacote para instalar pacotes
 Pkg.add("DataFrames")
 Pkg.add("CSV")
 Pkg.add("DelimitedFiles")
-
+Pkg.add("CategoricalArrays")
 
 # Carregando pacotes
 using DataFrames
 using CSV
 using DelimitedFiles
-
+using CategoricalArrays
 
 # Importar dados
 ## csv separado por virgula
@@ -58,3 +58,13 @@ select(insurance, Not(:sex))
 
 # selecionar todas as variavies exceto sex e bmi
 select(insurance, Not([:sex, :bmi]))
+
+# Variáveis ordinais
+## Creamos um dataset
+dados_test = DataFrame(
+                id = 1:4, 
+                date = ["28-01-2018", "03-04-2019", "01-08-2018", "22-11-2020"], 
+                age = ["adolescent", "adult", "infant", "adult"])
+
+## Precisamos converter date para Dates (pois não é string)
+## parei na 4.5 do livro
