@@ -23,11 +23,11 @@ using CategoricalArrays
 
 # Importar dados
 ## csv separado por virgula
-path = "/media/ctruciosm/46CE33E1CE33C847/Carlos/ctruciosm.github.io/datasets/insurance.csv"
+path = "/media/ctrucios/46CE33E1CE33C847/Carlos/ctruciosm.github.io/datasets/insurance.csv"
 insurance = CSV.read(path, DataFrame)
 
 ## csv separado por ponto e virgula
-path = "/media/ctruciosm/46CE33E1CE33C847/Carlos/ctruciosm.github.io/datasets/propellant.csv"
+path = "/media/ctrucios/46CE33E1CE33C847/Carlos/ctruciosm.github.io/datasets/propellant.csv"
 propellant = CSV.read(path, DataFrame, delim = ';')
 
 
