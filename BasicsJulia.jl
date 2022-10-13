@@ -4,9 +4,7 @@
 # Autor: Carlos Trucios                 #
 # https://ctruciosm.github.io           #
 #########################################
-# Material de apoio para meus alunos de #
-# MAD211 e ACA228 FACC/UFRJ             #
-#########################################
+
 
 # 1. Atribuição
 x = 20
@@ -41,6 +39,7 @@ typeof(peso)
 # 4. Comparações Lógicas
 x == y
 x != y
+x ≠ y
 x > y
 x <= y
 true && false
@@ -49,6 +48,7 @@ false && false
 true || false
 true || true
 false || false
+6 isa Real
 ## Se está na duvida sobre os últimos 6 resultados
 ## veja as tabelas de verdade: https://www.todamateria.com.br/tabela-verdade/
 
@@ -58,9 +58,6 @@ prod(idades)        # Produto de todos os elementos em 'idades'
 sum(idades)         # Soma de todos os elementos em 'idades'
 cumsum(idades)      # Soma acumulada de todos os elementos em 'idades'
 log(x)              # Logaritmo de x. Veja que log(idades) não funciona
-mean(x)             # Não funciona
-var(x)              # Não funciona
-
 
 # 6. Vectorização
 log(idades)

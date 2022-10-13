@@ -1,12 +1,10 @@
 #########################################
-###   Funções, condicionais e loops   ###
+###   Funções, Condicionais e Loops   ###
 #########################################
 # Autor: Carlos Trucios                 #
 # https://ctruciosm.github.io           #
 #########################################
-# Material de apoio para meus alunos de #
-# MAD211 e ACA228 FACC/UFRJ             #
-#########################################
+
 
 # 1 Criando Funções
 function media(vetor_de_dados) 
@@ -81,3 +79,38 @@ while n < 20
 end
 ## Repare que no exemplo do fatorial não precisamos 
 ## definir a variável global, pois estava dentro de uma função  
+
+# 5. Função com vários outputs
+function operacoes_basicas(a, b)
+    soma = a + b
+    substracao = a - b
+    multiplicacao = a * b
+    divisao = a / b
+    return soma, substracao, multiplicacao, divisao
+end
+
+operacoes_basicas(50, 2)
+s, r, m, d = operacoes_basicas(50, 2)
+s
+r
+m
+d
+
+all_operations = operacoes_basicas(50, 2)
+all_operations
+
+# 6. Funções anonimas
+map(x -> 2.7182818284590^x, log(2))
+
+# 7. Funções com Bang
+
+function add_two!(V)
+    for i in 1:length(V)
+        V[i] += 2
+    end
+    return nothing
+end
+
+V = [2, 3, 4]
+add_two!(V)
+V

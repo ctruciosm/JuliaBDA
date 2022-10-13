@@ -4,9 +4,7 @@
 # Autor: Carlos Trucios                 #
 # https://ctruciosm.github.io           #
 #########################################
-# Material de apoio para meus alunos de #
-# MAD211 e ACA228 FACC/UFRJ             #
-#########################################
+
 
 #  Instalando pacotes
 using Pkg                   # Pacote para instalar pacotes
@@ -23,11 +21,11 @@ using CategoricalArrays
 
 # Importar dados
 ## csv separado por virgula
-path = "/media/ctrucios/46CE33E1CE33C847/Carlos/ctruciosm.github.io/datasets/insurance.csv"
+path = "/Users/ctruciosm/Dropbox/ctruciosm.github.io/datasets/insurance.csv"
 insurance = CSV.read(path, DataFrame)
 
 ## csv separado por ponto e virgula
-path = "/media/ctrucios/46CE33E1CE33C847/Carlos/ctruciosm.github.io/datasets/propellant.csv"
+path = "/Users/ctruciosm/Dropbox/ctruciosm.github.io/datasets/propellant.csv"
 propellant = CSV.read(path, DataFrame, delim = ';')
 
 
