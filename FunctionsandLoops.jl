@@ -5,7 +5,7 @@
 # https://ctruciosm.github.io           #
 #########################################
 
-
+idades = [2, 5, 9, 8]
 # 1 Criando Funções
 function media(vetor_de_dados) 
     calcular_media = sum(vetor_de_dados) / length(vetor_de_dados)
